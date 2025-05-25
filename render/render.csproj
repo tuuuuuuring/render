@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\Images\Merrli_field.png" />
+    <None Remove="Assets\Images\Merrli_Sulliek.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Images\Merrli_field.png" />
+    <Resource Include="Assets\Images\Merrli_Sulliek.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ViewModels\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Emgu.CV" Version="4.10.0.5680" />
+    <PackageReference Include="Emgu.CV.Bitmap" Version="4.10.0.5680" />
+    <PackageReference Include="Emgu.CV.runtime.windows" Version="4.10.0.5680" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.3" />
+    <PackageReference Include="SkiaSharp" Version="3.116.1" />
+  </ItemGroup>
+
+</Project>
